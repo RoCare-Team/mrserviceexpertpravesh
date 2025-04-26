@@ -195,7 +195,7 @@ export default function Header() {
           >
             <div className="flex items-center mobileNumber">
               <span className="w-10 h-10">
-                <img src="/assets/images/Call (2).png" alt="urname" className="w-100" />
+                <img src="/assets/images/Call (2).webp" alt="urname" className="w-100" />
               </span>
               <a href="tel:+91-9311587744" className="text-black">
                 <button className="text-black">+91-9311587744</button>
