@@ -1,13 +1,14 @@
+"use client"
 import React from 'react';
 
 function Jobs() {
   return (
-    <div className='bg-white py-13'>
+    <div className='bg-white py-13 common-spacing'>
       <div className='container mx-auto px-3'>
         <div className='flex flex-col gap-6 mb-10'>
-          <div className='border-t-2 border-dashed border-gray-200'></div>
+          <div className='border-t-2 border-dashed border-purple-400'></div>
           <h2 className='text-3xl font-bold text-center text-gray-800'>Career Opportunities</h2>
-          <div className='border-t-2 border-dashed border-gray-200'></div>
+          <div className='border-t-2 border-dashed border-purple-400'></div>
           
           <p className='text-lg text-gray-600 text-center max-w-4xl mx-auto'>
            Join our dynamic team and be part of something extraordinary. We're looking for talented individuals ready to transform ideas into reality and make a meaningful impact.

@@ -1,10 +1,12 @@
+"use client"
+
 import { useState } from 'react';
 import { AccountCircle, Phone, Email, Message, LocationOn, Business, Language } from '@mui/icons-material';
 import { TextField } from '@mui/material';
 import { Typography, InputAdornment } from '@mui/material'
 import { faContactCard, faEnvelope, faSms } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Contact from '../../../assets/images/Customer-Services.jpg';
+
 import { toast, ToastContainer } from 'react-toastify';
 
 export default function ContactPage() {
@@ -223,7 +225,7 @@ export default function ContactPage() {
             <div className="md:w-1/2">
               <div className="mb-6">
                 <img 
-                  src={Contact}
+                  src={"/assets/images/Customer-Services.jpg"}
                   alt="Customer Support" 
                   className="w-full rounded-lg"
                 />
