@@ -21,7 +21,7 @@ const ServicesList = ({ addedServices = [], state }) => {
   const [BrandName,setBrandName]=useState("");
   // const { city, cat } = useParams();
 
-console.log(cat +"-"+ status );
+// console.log(cat +"-"  );
 
 // console.log(BrandName);
 

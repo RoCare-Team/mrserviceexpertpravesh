@@ -10,7 +10,7 @@ import ServicePage from "@/app/components/pages/Services/ServicePage";
 // }
 
 export async function generateMetadata({ params }) {
-  const { city , cat } = params;
+  const { city , cat } = await params;
 
   const response = await fetch('https://mannubhai.in/web_api/get_page_data.php', {
     method: 'POST',
