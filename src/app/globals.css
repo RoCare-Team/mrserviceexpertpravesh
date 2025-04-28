@@ -50,7 +50,29 @@ a:hover {
   text-decoration: underline;
 }
 
+.serviceContentStyle {
+   display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
+.serviceContentStyle a {
+  color: #333;
+}
+
+.serviceContentStyle table {
+  border: 1px solid #7533ea;
+  /* width: 100%; */
+  border-radius: 15px ;
+  border-collapse: collapse;
+}
+
+.serviceContentStyle th, 
+.serviceContentStyle td {
+  border: 1px solid #7533ea;
+  padding: 8px;
+  text-align: left;
+}
 
 /* header styling  */
 

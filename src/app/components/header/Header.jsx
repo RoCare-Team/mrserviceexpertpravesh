@@ -115,6 +115,7 @@ export default function Header() {
 
   const handleNavigation = (path) => {
     // navigate.push(path);
+    
     handleMenuClose();
     setDrawerOpen(false);
     setIsPopupVisible(false);
@@ -351,7 +352,8 @@ export default function Header() {
               <img src="/assets/images/serviceLogo.png" alt='Online Customer Service' />
             </ListItem>
 
-            <ListItem button onClick={() => handleNavigation('/')}>
+           
+           <ListItem button onClick={() => handleNavigation('/')}>
               <ListItemIcon sx={{ minWidth: '34px' }}>
                 <FontAwesomeIcon icon={faHome} />
               </ListItemIcon>
@@ -359,6 +361,7 @@ export default function Header() {
                 Home
               </Typography>
             </ListItem>
+           
             <Divider sx={{ borderColor: 'gray' }} />
             <ListItem button onClick={() => handleNavigation('/ro-water-purifier')}>
               <ListItemIcon sx={{ minWidth: '34px' }}><FontAwesomeIcon icon={faTools} /> </ListItemIcon>
