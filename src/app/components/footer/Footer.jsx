@@ -57,7 +57,7 @@ const Footer = () => {
               "Chandigarh"].map((city) => (
                 <a
                   key={city}
-                  href="#"
+                  href={`${city}`}
                   className=" text-white px-3 py-1  text-sm hover:text-yellow-300 transition"
                 >
                   {city}
@@ -65,18 +65,15 @@ const Footer = () => {
               ))}
           </div>
         </div>
-        {/* RO Service Popular Cities */}
         <div>
           <StateLinks />
         </div>
-
-        {/* Contact Info */}
         <div className=" contact-footer-style ">
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <p className="text-sm leading-relaxed">
-              Shop 22, Malibu Town, Sector 47,<br />
-              Gurugram, Haryana 122018
+            Unit No. 831, 8th Floor, JMD Megapolis, Sohna Road, <br />
+             Sector-48, Gurugram, Haryana 122018
             </p>
 
           </div>
@@ -90,7 +87,7 @@ const Footer = () => {
       </div>
       {/* Footer Bottom */}
       <div className="mt-10 text-center text-sm border-t border-gray-500 pt-6">
-        © {new Date().getFullYear()} RO Customer Care |
+        © {new Date().getFullYear()} Mr Service Expert |
         <a href="/" target='_blank' rel="noopener noreferrer" className="hover:text-yellow-400 transition mx-2">Home</a> |
         <a href="/terms-and-conditions" target='_blank' rel="noopener noreferrer" className="hover:text-yellow-400 transition mx-2">Terms</a> |
         <a href="/privacy-and-policy" target='_blank' rel="noopener noreferrer" className="hover:text-yellow-400 transition mx-2">Privacy Policy</a> |
@@ -98,8 +95,6 @@ const Footer = () => {
         <a href="/careers" target='_blank' rel="noopener noreferrer" className="hover:text-yellow-400 transition mx-2">Career</a>
 
       </div>
-
-      {/* Scroll to top */}
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         className="scrollUpBtn"
