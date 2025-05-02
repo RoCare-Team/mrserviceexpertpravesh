@@ -5,16 +5,16 @@ import React, { useState } from 'react';
 import { Box, Typography, Container, Grid, Button } from '@mui/material';
 function RepairView() {
   const brandLogos = [
-    { id: 1, src: "assets/images/All Logos/kent logo.webp", name: 'Kent' },
-    { id: 2, src: "assets/images/All Logos/unilever pure.webp", name: 'Pureit' },
-    { id: 3, src: "assets/images/All Logos/aqua smart.webp", name: 'AquaSmart' },
-    { id: 4, src: "assets/images/All Logos/livpure logo.webp", name: 'Live' },
-    { id: 6, src: "assets/images/All Logos/blue star.webp", name: 'BlueStar' },
-    { id: 7, src: "assets/images/BrandLogos/rkAqua.jpg", name: 'RkAqua' },
-    { id: 8, src: "assets/images/All Logos/nasaka.webp", name: 'Nasaka' },
-    { id: 9, src: "assets/images/All Logos/tata swach.webp", name: 'TataSwach' },
-    { id: 10, src: "assets/images/All Logos/nexus.webp", name: 'Nexus' },
-    { id: 12, src: "assets/images/All Logos/mi.webp", name: 'Mi' },
+    { id: 1, src: "/assets/images/All Logos/kent logo.webp", name: 'Kent' },
+    { id: 2, src: "/assets/images/All Logos/unilever pure.webp", name: 'Pureit' },
+    { id: 3, src: "/assets/images/All Logos/aqua smart.webp", name: 'AquaSmart' },
+    { id: 4, src: "/assets/images/All Logos/livpure logo.webp", name: 'Live' },
+    { id: 6, src: "/assets/images/All Logos/blue star.webp", name: 'BlueStar' },
+    { id: 7, src: "/assets/images/BrandLogos/rkAqua.jpg", name: 'RkAqua' },
+    { id: 8, src: "/assets/images/All Logos/nasaka.webp", name: 'Nasaka' },
+    { id: 9, src: "/assets/images/All Logos/tata swach.webp", name: 'TataSwach' },
+    { id: 10, src: "/assets/images/All Logos/nexus.webp", name: 'Nexus' },
+    { id: 12, src: "/assets/images/All Logos/mi.webp", name: 'Mi' },
   ];
 
   // Group brands by category (you can adjust the categories as needed)
@@ -108,8 +108,7 @@ function RepairView() {
         <Grid container spacing={{ xs: 2, md: 4 }} justifyContent="center">
           {brandLogos.map((brand) => (
             <Grid
-              item
-              xs={6} sm={4} md={3} lg={2}
+              size={{xs:6,sm:4,md:3,lg:2}}
               key={brand.id}
               sx={{
                 display: (!showAllBrands && brand.id > 7) ? { xs: 'none', sm: 'block' } : 'block'
